@@ -42,14 +42,14 @@ int main(void){
         exit(0);
     } else {
         initMat(M, N);
-        printf("M=");
-        printM1(M, N);
+        printf("Mx=");
+        printMx(M, N);
         initMat(v, N);
-        printf("v=");
-        printM2(v, N);
-        M1M2Mult(M,v,b,N);
-        printf("b=");
-        printM1(b, N);
+        printf("My=");
+        printMy(v, N);
+        MxMyMult(M,v,b,N);
+        printf("Mz=");
+        printMz(b, N);
     }
 
     free(M);
