@@ -1,4 +1,4 @@
 
-void printM1(int* M, int N);
-void printM2(int* v, int N);
-void M1M2Mult(int* M, int* v, int* vo, int N);
+void printMx(int* Mx, int N);
+void printMy(int* My, int N);
+void MxMyMult(int* Mx, int* My, int* Mz, int N);
