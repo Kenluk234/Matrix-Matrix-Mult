@@ -1,30 +1,41 @@
 #include <stdio.h>
 
-void printM1(int* M, int N){
+void printMx(int* Mx, int N){
 
     printf("[");
     for(int i=0; i<N; i++){
         printf("\n");
         for(int j=0; j<N; j++){
-            printf("%d,\t",M[N*i+j]);
+            printf("%d,\t",Mx[N*i+j]);
         }
     }
     printf("]\n");
 
 }
 
-void printM2(int* v, int N){
+void printMy(int* My, int N){
     printf("[");
     for(int i=0; i<N; i++){
         printf("\n");
         for(int j=0; j<N; j++){
-            printf("%d,\t",v[N*i+j]);
+            printf("%d,\t",My[N*i+j]);
         }
     }
     printf("]\n");
 }
 
-void M1M2Mult(int* Mx, int* My, int* Mz, int N){
+void printMz(int* Mz, int N){
+    printf("[");
+    for(int i=0; i<N; i++){
+        printf("\n");
+        for(int j=0; j<N; j++){
+            printf("%d,\t",Mz[N*i+j]);
+        }
+    }
+    printf("]\n");
+}
+
+void MxMyMult(int* Mx, int* My, int* Mz, int N){
 
     for(int i=0; i<N; i++){
         for(int j=0; j<N; j++){
